@@ -6,7 +6,7 @@ import Image from 'next/image'
 const testimonials = [
     {
         id: 1,
-        name: 'Анна Ковальчук',
+        name: 'Шрэк Петрович',
         position: 'Дизайнер интерьеров',
         text: 'Отличное качество мебели и профессиональный подход. Рекомендую!',
         avatar: '/images/testimonials/person1.jpg',
@@ -14,11 +14,11 @@ const testimonials = [
     },
     {
         id: 2,
-        name: 'Максим Петров',
+        name: 'Вероника Козел   ',
         position: 'Архитектор',
-        text: 'Работали над несколькими проектами вместе. Всегда на высшем уровне.',
-        avatar: '/images/testimonials/person2.jpg',
-        rating: 4
+        text: 'У нас самая лучшая мама, а кузни тут ни при чём.',
+        avatar: '/images/testimonials/Vera=mini.jpg',
+        rating: 5
     }
 ]
 
@@ -50,7 +50,7 @@ export default function Testimonials() {
                 </span>
                             ))}
                         </div>
-                        <p className="text-lg italic mb-6">"{testimonials[currentIndex].text}"</p>
+                        <p className="text-lg italic mb-6">&quot;{testimonials[currentIndex].text}&quot;</p>
 
                         <div className="flex items-center justify-center space-x-4">
                             <Image
