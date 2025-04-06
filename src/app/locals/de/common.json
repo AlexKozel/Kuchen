@@ -1,0 +1,20 @@
+{
+  "header": {
+    "title": "Kuchen",
+    "nav": {
+      "home": "Main",
+      "about": "About us",
+      "contact": "Contacts"
+    },
+    "consultation": "Free consulting"
+  },
+  "form": {
+    "name": "Ваше имя",
+    "phone": "Телефон",
+    "submit": "Отправить",
+    "errors": {
+      "required": "Обязательное поле",
+      "email": "Некорректный email"
+    }
+  }
+}

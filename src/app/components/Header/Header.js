@@ -3,9 +3,12 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import {useTranslations} from "next-intl";
+import {LocaleSwitcher} from "@/app/components/LocaleSwitcher";
 
 export default function Header() {
     const [scrolled, setScrolled] = useState(false)
+    const t = useTranslations('header')
 
     useEffect(() => {
         const handleScroll = () => setScrolled(window.scrollY > 50)
@@ -26,8 +29,8 @@ export default function Header() {
                 </div>
 
                 <nav className="hidden md:flex items-center space-x-8">
-                    <Link href="/" className="text-white hover:text-red-500 transition">Главная</Link>
-                    <Link href="/about" className="text-white hover:text-red-500 transition">О компании</Link>
+                    <Link href="/" className="text-white hover:text-red-500 transition">{t('title')}</Link>
+                    <Link href="/about" className="text-white hover:text-red-500 transition"> {t('nav.about')}</Link>
                     <button
                         onClick={() => {
                             const section = document.getElementById("footer")
@@ -35,7 +38,7 @@ export default function Header() {
                         }}
                         className="text-white hover:text-red-500 transition"
                     >
-                        Контакты
+                        {t('nav.contact')}
                     </button>
                 </nav>
 
@@ -70,6 +73,8 @@ export default function Header() {
                         </svg>
                     </a>
                 </div>
+
+                <LocaleSwitcher />
 
                 <button className="md:hidden text-white">☰</button>
             </div>
