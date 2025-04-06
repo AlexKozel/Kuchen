@@ -1,6 +1,8 @@
 // app/components/Footer/Footer.js
+'use client'
 import Link from 'next/link'
 import Image from 'next/image'
+
 
 export default function Footer() {
     return (
@@ -23,8 +25,8 @@ export default function Footer() {
                     <div>
                         <h3 className="text-xl font-semibold mb-4">Контакты</h3>
                         <address className="text-gray-400 not-italic">
-                            <p>г. Москва, ул. Примерная, 123</p>
-                            <p>+7 (123) 456-78-90</p>
+                            <p> Platz der Republik 1, 11011 Berlin, Германия</p>
+                            <p>+49 (123) 456-78-90</p>
                             <p>info@example.com</p>
                         </address>
                     </div>
@@ -33,8 +35,18 @@ export default function Footer() {
                         <h3 className="text-xl font-semibold mb-4">Меню</h3>
                         <nav className="space-y-2">
                             <Link href="/" className="block text-gray-400 hover:text-white">Главная</Link>
-                            <Link href="/portfolio" className="block text-gray-400 hover:text-white">Портфолио</Link>
-                            <Link href="/contacts" className="block text-gray-400 hover:text-white">Контакты</Link>
+                            <button
+                                onClick={() => {
+                                    const section = document.getElementById("portfolio")
+                                    section?.scrollIntoView({behavior: "smooth"})
+                                }}
+                                className="block text-gray-400 hover:text-white"
+                            >
+                                Портфолио
+                            </button>
+
+                            {/*<Link href="/Feed" className="block text-gray-400 hover:text-white">Портфолио</Link>*/}
+                            {/*<Link href="/contacts" className="block text-gray-400 hover:text-white">Контакты</Link>*/}
                         </nav>
                     </div>
                 </div>

@@ -12,7 +12,7 @@ const COUNTRIES = [
     { code: 'UA', name: 'Украина', dialCode: '+380', flag: '🇺🇦' },
 ]
 
-export default function FeedbackForm() {
+export default function FeedbackForm( {onSuccess}) {
     const [formData, setFormData] = useState({
         name: '',
         phone: '',
@@ -37,7 +37,7 @@ export default function FeedbackForm() {
 
     const validatePhone = (phone) => {
         // Проверяем минимальную длину номера (код страны + 6 цифр)
-        return phone.replace(/[^\d]/g, '').length = 9
+        return phone.replace(/[^\d]/g, '').length === 9
     }
 
     const validateEmail = (email) => {
@@ -97,7 +97,9 @@ export default function FeedbackForm() {
                     country: formData.country
                 }),
             })
-
+            if (response.ok) {
+                onSuccess?.(); // Закрываем модалку
+            }
             if (response.ok) {
                 setIsSuccess(true)
                 setFormData({
