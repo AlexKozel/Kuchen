@@ -6,6 +6,7 @@ export default function QuoteForm() {
     const [formData, setFormData] = useState({
         name: '',
         phone: '',
+        message:'',
         email: ''
     })
 

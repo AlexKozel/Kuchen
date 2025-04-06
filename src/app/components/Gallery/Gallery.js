@@ -10,8 +10,7 @@ const projects = [
         title: 'Кухня в классическом стиле',
         images: [
             '/images/projects/kit-1-1.jpg',
-            '/images/projects/kit-1-2.jpg',
-            '/images/projects/kit-1-1.jpg'
+            '/images/projects/kit-1-2.jpg'
         ]
     },
     {
@@ -19,22 +18,17 @@ const projects = [
         title: 'Современный гардероб',
         images: [
             '/images/projects/kit-2-1.jpg',
-            '/images/projects/kit-2-2.jpg'
+            '/images/projects/kit-2-2.jpg',
+            '/images/projects/kit-2-3.jpg',
+            '/images/projects/kit-2-4.jpg'
         ]
     },
     {
         id: 3,
         title: 'Гостиная в скандинавском стиле',
         images: [
-            '/images/projects/kit-1-1.jpg',
-            '/images/projects/kit-1-2.jpg'
-        ]
-    },
-    {
-        id: 4,
-        title: 'Детская комната',
-        images: [
-            '/images/projects/kit-2-1.jpg'
+            '/images/projects/kit-3-1.jpg',
+            '/images/projects/kit-3-2.jpg'
         ]
     }
 ]
