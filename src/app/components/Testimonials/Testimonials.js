@@ -14,10 +14,10 @@ const testimonials = [
     },
     {
         id: 2,
-        name: 'Вероника Козел   ',
+        name: 'Абдулашма Маран   ',
         position: 'Архитектор',
-        text: 'У нас самая лучшая мама, а кузни тут ни при чём.',
-        avatar: '/images/testimonials/Vera=mini.jpg',
+        text: 'Купил кухню - живу на ней',
+        avatar: '/images/testimonials/person2.jpg',
         rating: 5
     }
 ]
