@@ -1,0 +1,13 @@
+{
+  "LocaleSwitcher": {
+    "label": "Язык",
+    "locale": "{locale, select, en {Английский} de {Немецкий} uk {Украинский} other {Русский}}"
+  },
+  "Header": {
+    "home": "Главная",
+    "about": "О нас"
+  },
+  "HomePage": {
+    "title": "Заголовок Главной Страницы"
+  }
+}
