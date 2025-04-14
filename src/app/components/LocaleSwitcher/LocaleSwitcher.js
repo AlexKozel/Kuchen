@@ -1,6 +1,6 @@
 'use client';
 
-import { useRouter, usePathname } from 'next/navigation';
+import { useRouter, usePathname, useSearchParams } from 'next/navigation';
 import { useLocale } from 'next-intl';
 import { useState } from 'react';
 
@@ -12,18 +12,29 @@ const LOCALE_LABELS = {
 export function LocaleSwitcher({ locales }) {
   const router = useRouter();
   const pathname = usePathname();
+  const searchParams = useSearchParams();  // Получаем параметры поиска
   const currentLocale = useLocale();
   const [open, setOpen] = useState(false);
 
   const changeLanguage = (locale) => {
     const pathSegments = pathname.split('/');
+
+    // Убираем старую локаль, если она есть в пути
     if (pathSegments[1] === currentLocale) {
       pathSegments.splice(1, 1);
     }
+
     const pathWithoutLocale = pathSegments.join('/') || '/';
-    router.push(`/${locale}${pathWithoutLocale === '/' && pathWithoutLocale.length > 1
+
+    // Формируем новый путь с новой локалью и текущими параметрами поиска
+    const newPath = `/${locale}${pathWithoutLocale === '/' && pathWithoutLocale.length > 1
         ? pathWithoutLocale.substring(1)
-        : pathWithoutLocale}`);
+        : pathWithoutLocale}`;
+
+    // Добавляем параметры поиска (query params) в новый путь
+    const newUrl = `${newPath}${searchParams.toString() ? `?${searchParams.toString()}` : ''}`;
+
+    router.push(newUrl);
     setOpen(false);
   };
 
@@ -50,11 +61,7 @@ export function LocaleSwitcher({ locales }) {
                     <button
                         key={locale}
                         onClick={() => changeLanguage(locale)}
-                        className={`flex items-center w-full px-3 py-2 text-left transition duration-150 ${
-                            isActive
-                                ? 'bg-gray-700 text-blue-400'
-                                : 'hover:bg-gray-700 text-white'
-                        }`}
+                        className={`flex items-center w-full px-3 py-2 text-left transition duration-150 ${isActive ? 'bg-gray-700 text-blue-400' : 'hover:bg-gray-700 text-white'}`}
                     >
                       <img
                           src={LOCALE_LABELS[locale]?.icon}
