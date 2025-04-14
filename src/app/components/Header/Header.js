@@ -4,11 +4,13 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useTranslations, useLocale } from 'next-intl'
 import { LocaleSwitcher } from "@/app/components/LocaleSwitcher/LocaleSwitcher"
+import { FaInstagram, FaFacebookF } from 'react-icons/fa'
 
 export default function Header({ locales }) {
   const [scrolled, setScrolled] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false)
   const t = useTranslations('header')
-  const locale = useLocale() // ✅ получаем текущую локаль
+  const locale = useLocale()
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50)
@@ -16,29 +18,43 @@ export default function Header({ locales }) {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen)
+  }
+
   return (
       <header className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${scrolled ? 'bg-gray-900/95' : 'bg-transparent'}`}>
         <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
-          <div className="flex items-center space-x-4">
-            <Link href="/" locale={locale}> {/* ✅ передаём локаль */}
-              <Image
-                  src="/images/komandor.svg"
-                  width={120}
-                  height={40}
-                  alt={t('title')}
-              />
-            </Link>
-          </div>
+          <Link href="/" locale={locale}>
+            <Image src="/images/komandor.svg" width={120} height={40} alt={t('title')} />
+          </Link>
 
-          <nav className="hidden md:flex items-center space-x-8">
+          {/* Десктоп меню */}
+          <nav className="hidden md:flex items-center space-x-6">
             <LocaleSwitcher locales={locales} />
-            <Link href={`/${locale}`} className="text-white hover:text-red-500 transition">{t('nav.home')}</Link>
-            <Link href={`/${locale}/about`} className="text-white hover:text-red-500 transition">{t('nav.about')}</Link>
-            {/* <Link href="/contact" locale={locale} className="text-white hover:text-red-500 transition">{t('nav.contact')}</Link> */}
+            <Link href={`/${locale}`} className="text-white hover:text-red-500">{t('nav.home')}</Link>
+            <Link href={`/${locale}/about`} className="text-white hover:text-red-500">{t('nav.about')}</Link>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-white text-xl hover:text-pink-500"><FaInstagram /></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-white text-xl hover:text-blue-500"><FaFacebookF /></a>
           </nav>
 
-          <button className="md:hidden text-white">☰</button>
+          {/* Бургер кнопка */}
+          <button className="md:hidden text-white text-2xl" onClick={toggleMenu}>
+            ☰
+          </button>
         </div>
+
+        {/* Мобильное меню */}
+        {menuOpen && (
+            <div className="md:hidden bg-gray-900/95 text-white px-4 py-6 space-y-4">
+              <Link href={`/${locale}`} className="block" onClick={toggleMenu}>{t('nav.home')}</Link>
+              <Link href={`/${locale}/about`} className="block" onClick={toggleMenu}>{t('nav.about')}</Link>
+              <div className="flex space-x-4 mt-4">
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-xl hover:text-pink-500"><FaInstagram /></a>
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-xl hover:text-blue-500"><FaFacebookF /></a>
+              </div>
+            </div>
+        )}
       </header>
   )
 }

@@ -5,6 +5,7 @@ import { useLocale } from 'next-intl';
 import { useState } from 'react';
 
 const LOCALE_LABELS = {
+  de: { label: 'Deutsch', icon: '/icons/flags/de.svg' },
   en: { label: 'English', icon: '/icons/flags/uk.svg' },
   ru: { label: 'Русский', icon: '/icons/flags/ru.svg' },
 };
