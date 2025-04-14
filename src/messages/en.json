@@ -5,9 +5,9 @@
   "header": {
     "title": "Kuchen",
     "nav": {
-      "home": "Главная",
-      "about": "О компании",
-      "contact": "Контакты"
+      "home": "Home",
+      "about": "About us",
+      "contact": "Contacts"
     }
   }
 }

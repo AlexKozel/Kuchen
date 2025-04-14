@@ -1,7 +1,7 @@
 // src/app/[locale]/page.js (Адаптированный)
 import { useTranslations } from 'next-intl';
 // Импортируйте ваши компоненты (убедитесь, что алиас @/ настроен в jsconfig.json)
-import Header from '@/app/components/Header/Header';
+// import Header from '@/app/components/Header/Header';
 import HeroBanner from '@/app/components/HeroBanner/HeroBanner';
 import Gallery from '@/app/components/Gallery/Gallery';
 import Footer from '@/app/components/Footer/Footer';
@@ -17,8 +17,6 @@ export default function Home() {
     return (
         <div className="font-sans">
             {/* Header будет адаптирован позже для переключателя */}
-            <Header />
-            <h1>{t('title')}</h1> {/* Используем перевод */}
             <HeroBanner />
             <Gallery />
             <WorkWithUs />

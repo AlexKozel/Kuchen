@@ -1,9 +1,9 @@
 {
-  "homePage": {
+  "HomePage": {
     "title": "Russian"
   },
   "header": {
-    "title": "Kuchen",
+    "title": "Russian",
     "nav": {
       "home": "Главная",
       "about": "О компании",
