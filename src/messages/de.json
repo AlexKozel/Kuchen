@@ -1,10 +1,114 @@
 {
+  "HomePage": {
+    "title": "Deutsch"
+  },
   "header": {
-    "title": "Kuchen",
+    "title": "Deutsch",
     "nav": {
-      "home": "Главная",
-      "about": "О компании",
-      "contact": "Контакты"
+      "home": "Startseite",
+      "about": "Über uns",
+      "contact": "Kontakt"
     }
-  }
+  },
+  "about": {
+    "hero": {
+      "alt": "Über uns",
+      "title": "Über das Küchenstudio",
+      "subtitle": "Wir planen Küchen präzise wie ein Uhrwerk. Dank Hersteller-Software passt alles perfekt zusammen."
+    },
+    "content": {
+      "title": "Was uns auszeichnet",
+      "point1": "✔️ Planung mit Hersteller-Software — inklusive Geräten und Beschlägen",
+      "point2": "✔️ Direkte Herstellergarantie",
+      "point3": "✔️ Deutsche Küchen und Geräte von AEG, Siemens, Miele, Neff",
+      "point4": "✔️ Europäische Armaturen: BLANCO, Franke, Grohe",
+      "point5": "✔️ Rechtlich bindender Vertrag, transparente Kalkulation, faire Preise",
+      "imageAlt": "Arbeitsprozess"
+    },
+    "partners": {
+      "title": "Unsere Partner",
+      "subtitle": "Wir verwenden Komponenten der besten europäischen Marken"
+    }
+  },
+  "feedback": {
+    "title": "Anfrage senden",
+    "name": "Ihr Name*",
+    "phone": "Telefon*",
+    "email": "E-Mail",
+    "message": "Nachricht",
+    "submit": "Senden",
+    "submitting": "Wird gesendet...",
+    "success": "Danke! Ihre Nachricht wurde gesendet.",
+    "error": {
+      "name": "Bitte geben Sie Ihren Namen ein",
+      "phone": "Bitte geben Sie eine gültige Telefonnummer ein",
+      "email": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+      "submit": "Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut."
+    }
+  },
+  "countries": {
+    "DE": "Deutschland"
+  },
+  "footer": {
+    "logoAlt": "Logo",
+    "description": "Möbelmanufaktur seit 2010",
+    "contactsTitle": "Kontakt",
+    "address": "Platz der Republik 1, 11011 Berlin, Deutschland",
+    "phone": "+49 (123) 456-78-90",
+    "email": "info@example.com",
+    "menuTitle": "Menü",
+    "home": "Startseite",
+    "portfolio": "Portfolio",
+    "rights": "© 2023 Möbelstudio. Alle Rechte vorbehalten."
+  },
+  "workWithUs": {
+    "howWeWorkTitle": "So arbeiten wir",
+    "howWeWorkDescription": "Individuelle Herangehensweise und Präzision – vom ersten Aufmaß bis zur letzten Schraube.",
+    "step1Title": "1. Aufmaß vor Ort",
+    "step1Description": "Ein Fachmann misst alles aus – Nischen, Rohre, Steckdosen, Vorsprünge. Damit später nichts im Weg ist. Kostenlos.",
+    "step1Alt": "Aufmaß",
+    "step2Title": "2. Planung in Hersteller-Software",
+    "step2Description": "Wir planen Ihre Küche in offizieller Software des Herstellers – exakt angepasst an Raummaße, Besonderheiten und integrierte Geräte. Fehler ausgeschlossen, alles passt millimetergenau.",
+    "step2Alt": "Planung",
+    "step3Title": "3. Freigabe und Abstimmung",
+    "step3Description": "Sie erhalten ein realistisches Projekt mit finalem Angebot. Keine versteckten Kosten – alles transparent.",
+    "step3Alt": "Abstimmung",
+    "step4Title": "4. Fertigung und Montage",
+    "step4Description": "Nach Freigabe geht der Auftrag in die Fertigung. Die Montage erfolgt durch zertifizierte Monteure – sauber, ordentlich, nach Norm.",
+    "step4Alt": "Montage"
+  },
+  "Testimonials": {
+    "title": "Kundenbewertungen",
+    "items": {
+      "shrek": {
+        "name": "Shrek Petrowitsch",
+        "position": "Innenarchitekt",
+        "text": "Hervorragende Möbelqualität und professionelles Vorgehen. Sehr empfehlenswert!",
+        "avatar": "/images/testimonials/person1.jpg",
+        "rating": "5"
+      },
+      "abdul": {
+        "name": "Abdulashma Maran",
+        "position": "Architekt",
+        "text": "Küche gekauft – jetzt lebe ich darin.",
+        "avatar": "/images/testimonials/person2.jpg",
+        "rating": "5"
+      }
+    }
+  },
+  "HeroBanner": {
+    "title": "Maßgefertigte Küchen",
+    "cta": "Kostenlose Beratung",
+    "closeModal": "Schließen"
+  },
+  "Gallery": {
+    "title": "Unsere Arbeiten",
+    "photoCount": "{count} Fotos",
+    "projects": {
+      "classicKitchen": "Küche im klassischen Stil",
+      "modernWardrobe": "Moderner Kleiderschrank",
+      "scandiLiving": "Wohnzimmer im skandinavischen Stil"
+    }
+  },
+  "validationError": "error"
 }

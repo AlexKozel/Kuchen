@@ -1,26 +1,30 @@
-import Image from 'next/image';
+'use client'
+import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 
 export default function WorkWithUs() {
+  const t = useTranslations('workWithUs')
+
   return (
       <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-4xl font-extrabold text-center text-gray-900 mb-4">
-            Как мы работаем
+            {t('howWeWorkTitle')}
           </h2>
           <p className="text-xl text-center text-gray-600 mb-16 max-w-2xl mx-auto">
-            Индивидуальный подход и точность — с первого замера до последнего винта
+            {t('howWeWorkDescription')}
           </p>
 
           <div className="grid md:grid-cols-2 gap-10">
             {/* Шаг 1 */}
             <div className="flex gap-6 items-start bg-white p-6 rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition">
               <div className="min-w-[60px]">
-                <Image src="/icons/workWithUs/measure.svg" width={60} height={60} alt="Снятие замеров" />
+                <Image src="/icons/workWithUs/measure.svg" width={60} height={60} alt={t('step1Alt')} />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">1. Снятие замеров</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">{t('step1Title')}</h3>
                 <p className="text-gray-700 leading-relaxed">
-                  Специалист снимает все размеры, учитывая ниши, трубы, розетки, выступы — чтобы ничего не мешало будущей кухне. Это бесплатно.
+                  {t('step1Description')}
                 </p>
               </div>
             </div>
@@ -28,15 +32,12 @@ export default function WorkWithUs() {
             {/* Шаг 2 */}
             <div className="flex gap-6 items-start bg-white p-6 rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition">
               <div className="min-w-[60px]">
-                <Image src="/icons/workWithUs/design.svg" width={60} height={60} alt="Проектирование" />
+                <Image src="/icons/workWithUs/design.svg" width={60} height={60} alt={t('step2Alt')} />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">2. Проектирование в ПО от производителя</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">{t('step2Title')}</h3>
                 <p className="text-gray-700 leading-relaxed">
-                  Мы создаём макет кухни в официальной программе от производителя мебели.
-                  Программа учитывает всё: размеры помещения, ниши, особенности планировки,
-                  а главное — <strong>размеры бытовой техники</strong> из встроенной базы данных.
-                  Это исключает ошибки и гарантирует, что всё встанет идеально.
+                  {t('step2Description')}
                 </p>
               </div>
             </div>
@@ -44,12 +45,12 @@ export default function WorkWithUs() {
             {/* Шаг 3 */}
             <div className="flex gap-6 items-start bg-white p-6 rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition">
               <div className="min-w-[60px]">
-                <Image src="/icons/workWithUs/approve.svg" width={60} height={60} alt="Утверждение" />
+                <Image src="/icons/workWithUs/approve.svg" width={60} height={60} alt={t('step3Alt')} />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">3. Утверждение и согласование</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">{t('step3Title')}</h3>
                 <p className="text-gray-700 leading-relaxed">
-                  Вы получаете реалистичный проект и финальную смету. Никаких скрытых доплат — всё прозрачно.
+                  {t('step3Description')}
                 </p>
               </div>
             </div>
@@ -57,12 +58,12 @@ export default function WorkWithUs() {
             {/* Шаг 4 */}
             <div className="flex gap-6 items-start bg-white p-6 rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition">
               <div className="min-w-[60px]">
-                <Image src="/icons/workWithUs/install.svg" width={60} height={60} alt="Установка" />
+                <Image src="/icons/workWithUs/install.svg" width={60} height={60} alt={t('step4Alt')} />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">4. Производство и установка</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">{t('step4Title')}</h3>
                 <p className="text-gray-700 leading-relaxed">
-                  После согласования, заказ отправляется на производство. Установку выполняют сертифицированные монтажники — чисто, аккуратно, по стандартам.
+                  {t('step4Description')}
                 </p>
               </div>
             </div>
