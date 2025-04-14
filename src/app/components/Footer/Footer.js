@@ -1,60 +1,63 @@
-// app/components/Footer/Footer.js
 'use client'
+
 import Link from 'next/link'
 import Image from 'next/image'
-
+import {useLocale, useTranslations} from 'next-intl'
+import {useRouter} from "next/navigation";
 
 export default function Footer() {
-    return (
-        <footer className="bg-gray-900 text-white py-12">
-            <div className="max-w-7xl mx-auto px-4">
-                <div className="grid md:grid-cols-3 gap-8 mb-8">
-                    <div>
-                        <Image
-                            src="/images/komandor.svg"
-                            width={160}
-                            height={50}
-                            alt="Логотип"
-                            className="mb-4"
-                        />
-                        <p className="text-gray-400">
-                            Производство мебели на заказ с 2010 года
-                        </p>
-                    </div>
+  const t = useTranslations('footer')
+  const locale = useLocale()
+  const router = useRouter()
 
-                    <div>
-                        <h3 className="text-xl font-semibold mb-4">Контакты</h3>
-                        <address className="text-gray-400 not-italic">
-                            <p> Platz der Republik 1, 11011 Berlin, Германия</p>
-                            <p>+49 (123) 456-78-90</p>
-                            <p>info@example.com</p>
-                        </address>
-                    </div>
-
-                    <div>
-                        <h3 className="text-xl font-semibold mb-4">Меню</h3>
-                        <nav className="space-y-2">
-                            <Link href="/" className="block text-gray-400 hover:text-white">Главная</Link>
-                            <button
-                                onClick={() => {
-                                    const section = document.getElementById("portfolio")
-                                    section?.scrollIntoView({behavior: "smooth"})
-                                }}
-                                className="block text-gray-400 hover:text-white"
-                            >
-                                Портфолио
-                            </button>
-
-                            {/*<Link href="/Feed" className="block text-gray-400 hover:text-white">Портфолио</Link>*/}
-                            {/*<Link href="/contacts" className="block text-gray-400 hover:text-white">Контакты</Link>*/}
-                        </nav>
-                    </div>
-                </div>
-
-                <div className="border-t border-gray-800 pt-8 text-center text-gray-500">
-                    <p>© 2023 Студия мебели. Все права защищены.</p>
-                </div>
+  return (
+      <footer className="bg-gray-900 text-white py-12">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="grid md:grid-cols-3 gap-8 mb-8">
+            <div>
+              <Image
+                  src="/images/komandor.svg"
+                  width={160}
+                  height={50}
+                  alt={t('logoAlt')}
+                  className="mb-4"
+              />
+              <p className="text-gray-400">
+                {t('description')}
+              </p>
             </div>
-        </footer>
-    )
+
+            <div>
+              <h3 className="text-xl font-semibold mb-4">{t('contactsTitle')}</h3>
+              <address className="text-gray-400 not-italic">
+                <p>{t('address')}</p>
+                <p>{t('phone')}</p>
+                <p>{t('email')}</p>
+              </address>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold mb-4">{t('menuTitle')}</h3>
+              <nav className="space-y-2">
+                <Link href={`/${locale}`} className="block text-gray-400 hover:text-white">
+                  {t('home')}
+                </Link>
+                <button
+                    onClick={() => {
+                      router.push(`/${locale}/#portfolio`)
+                    }}
+                    className="block text-gray-400 hover:text-white"
+                >
+                  {t('portfolio')}
+                </button>
+              </nav>
+            </div>
+          </div>
+
+          <div className="border-t border-gray-800 pt-8 text-center text-gray-500">
+            <p>{t('rights')}</p>
+          </div>
+        </div>
+      </footer>
+  )
 }

@@ -1,0 +1,114 @@
+{
+  "HomePage": {
+    "title": "English"
+  },
+  "header": {
+    "title": "English",
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "contact": "Contact"
+    }
+  },
+  "about": {
+    "hero": {
+      "alt": "About Us",
+      "title": "About the Kitchen Studio",
+      "subtitle": "We design kitchens precisely, like clockwork. We use factory software to ensure everything fits perfectly."
+    },
+    "content": {
+      "title": "What Sets Us Apart",
+      "point1": "✔️ Designed using factory software — including appliances and fittings",
+      "point2": "✔️ Direct warranty from the manufacturer",
+      "point3": "✔️ German kitchens and appliances by AEG, Siemens, Miele, Neff",
+      "point4": "✔️ European fittings: BLANCO, Franke, Grohe",
+      "point5": "✔️ Legal contract, transparent estimate, fair pricing",
+      "imageAlt": "Work process"
+    },
+    "partners": {
+      "title": "Our Partners",
+      "subtitle": "We use components from the best European brands"
+    }
+  },
+  "feedback": {
+    "title": "Leave a Request",
+    "name": "Your Name*",
+    "phone": "Phone*",
+    "email": "Email",
+    "message": "Message",
+    "submit": "Submit",
+    "submitting": "Submitting...",
+    "success": "Thank you! Your message has been sent.",
+    "error": {
+      "name": "Please enter your name",
+      "phone": "Please enter a valid phone number",
+      "email": "Please enter a valid email address",
+      "submit": "An error occurred while sending. Please try again later."
+    }
+  },
+  "countries": {
+    "DE": "Germany"
+  },
+  "footer": {
+    "logoAlt": "Logo",
+    "description": "Custom furniture manufacturing since 2010",
+    "contactsTitle": "Contacts",
+    "address": "Platz der Republik 1, 11011 Berlin, Germany",
+    "phone": "+49 (123) 456-78-90",
+    "email": "info@example.com",
+    "menuTitle": "Menu",
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "rights": "© 2023 Furniture studio. All rights reserved."
+  },
+  "workWithUs": {
+    "howWeWorkTitle": "How We Work",
+    "howWeWorkDescription": "A personalized approach and precision — from the first measurement to the last screw.",
+    "step1Title": "1. Taking Measurements",
+    "step1Description": "A specialist takes all measurements, considering niches, pipes, outlets, projections — so nothing interferes with the future kitchen. This is free of charge.",
+    "step1Alt": "Taking Measurements",
+    "step2Title": "2. Design in Manufacturer's Software",
+    "step2Description": "We create a kitchen layout in the official program from the furniture manufacturer. The program considers everything: room dimensions, niches, layout features, and most importantly — the dimensions of household appliances from the built-in database. This eliminates errors and guarantees everything will fit perfectly.",
+    "step2Alt": "Designing",
+    "step3Title": "3. Approval and Coordination",
+    "step3Description": "You receive a realistic project and the final estimate. No hidden additional charges — everything is transparent.",
+    "step3Alt": "Approval",
+    "step4Title": "4. Production and Installation",
+    "step4Description": "After approval, the order goes into production. Installation is carried out by certified installers — clean, neat, and according to standards.",
+    "step4Alt": "Installation"
+  },
+  "Testimonials": {
+    "title": "Customer reviews",
+    "items": {
+      "shrek": {
+        "name": "Shrek Petrovich",
+        "position": "Interior Designer",
+        "text": "Excellent furniture quality and professional approach. Recommended!",
+        "avatar": "/images/testimonials/person1.jpg",
+        "rating": "5"
+      },
+      "abdul": {
+        "name": "Abdulashma Maran",
+        "position": "Architect",
+        "text": "Bought a kitchen — now I live on it.",
+        "avatar": "/images/testimonials/person2.jpg",
+        "rating": "5"
+      }
+    }
+  },
+  "HeroBanner": {
+    "title": "Custom Kitchen Studio",
+    "cta": "Free consultation",
+    "closeModal": "Close"
+  },
+  "Gallery": {
+    "title": "Our Work",
+    "photoCount": "{count} photos",
+    "projects": {
+      "classicKitchen": "Classic Style Kitchen",
+      "modernWardrobe": "Modern Wardrobe",
+      "scandiLiving": "Scandinavian Living Room"
+    }
+  },
+  "validationError": "error"
+}
