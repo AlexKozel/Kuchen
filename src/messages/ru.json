@@ -1,0 +1,13 @@
+{
+  "HomePage": {
+    "title": "Russian"
+  },
+  "header": {
+    "title": "Russian",
+    "nav": {
+      "home": "Главная",
+      "about": "О компании",
+      "contact": "Контакты"
+    }
+  }
+}

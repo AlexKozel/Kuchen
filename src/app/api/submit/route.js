@@ -26,7 +26,7 @@ export async function POST(request) {
             })
         });
 
-        // // Отправка во все чаты
+        // Отправка во все чаты
         // const sendPromises = chatIds.map(chatId =>
         //     fetch(`https://api.telegram.org/bot${process.env.TELEGRAM_BOT_TOKEN}/sendMessage`, {
         //         method: 'POST',

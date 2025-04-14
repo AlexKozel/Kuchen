@@ -45,8 +45,6 @@ export default function Footer() {
                                 Портфолио
                             </button>
 
-                            {/*<Link href="/Feed" className="block text-gray-400 hover:text-white">Портфолио</Link>*/}
-                            {/*<Link href="/contacts" className="block text-gray-400 hover:text-white">Контакты</Link>*/}
                         </nav>
                     </div>
                 </div>

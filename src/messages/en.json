@@ -1,0 +1,13 @@
+{
+  "HomePage": {
+    "title" : "English"
+  },
+  "header": {
+    "title": "Kuchen",
+    "nav": {
+      "home": "Home",
+      "about": "About us",
+      "contact": "Contacts"
+    }
+  }
+}
