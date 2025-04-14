@@ -1,0 +1,13 @@
+{
+  "homePage": {
+    "title": "Russian"
+  },
+  "header": {
+    "title": "Kuchen",
+    "nav": {
+      "home": "Главная",
+      "about": "О компании",
+      "contact": "Контакты"
+    }
+  }
+}

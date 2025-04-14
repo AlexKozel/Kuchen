@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import LocaleSwitcher from "@/app/components/LocaleSwitcher/LocaleSwitcher";
+import {LocaleSwitcher} from "@/app/components/LocaleSwitcher/LocaleSwitcher";
 
 export default function Header() {
     const [scrolled, setScrolled] = useState(false)
@@ -27,6 +27,7 @@ export default function Header() {
                 </div>
 
                 <nav className="hidden md:flex items-center space-x-8">
+                  <LocaleSwitcher />
                     <Link href="/" className="text-white hover:text-red-500 transition">Главная</Link>
                     <Link href="/about" className="text-white hover:text-red-500 transition">О компании</Link>
                 </nav>
