@@ -109,5 +109,6 @@
       "modernWardrobe": "Moderner Kleiderschrank",
       "scandiLiving": "Wohnzimmer im skandinavischen Stil"
     }
-  }
+  },
+  "validationError": "error"
 }

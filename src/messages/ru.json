@@ -109,5 +109,6 @@
       "modernWardrobe": "Современный гардероб",
       "scandiLiving": "Гостиная в скандинавском стиле"
     }
-  }
+  },
+  "validationError": "error"
 }
