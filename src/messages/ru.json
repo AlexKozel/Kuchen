@@ -78,21 +78,21 @@
     "step4Alt": "Установка"
   },
   "Testimonials": {
-    "title": "Customer reviews",
+    "title": "Отзывы Клиентов",
     "items": {
       "shrek": {
-        "name": "Shrek Petrovich",
-        "position": "Interior Designer",
-        "text": "Excellent furniture quality and professional approach. Recommended!",
+        "name": "Шрек Петровчи",
+        "position": "Интерьер Дизайнер",
+        "text": "шикааааарно",
         "avatar": "/images/testimonials/person1.jpg",
         "rating": "5"
       },
       "abdul": {
-        "name": "Abdulashma Maran",
+        "name": "Абделашма Ааран",
         "position": "Architect",
-        "text": "Bought a kitchen — now I live on it.",
+        "text": "быстро, красиво",
         "avatar": "/images/testimonials/person2.jpg",
-        "rating": "5"
+        "rating": "4"
       }
     }
   },
