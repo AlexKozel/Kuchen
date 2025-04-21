@@ -34,8 +34,8 @@ export default function Header({ locales }) {
             <LocaleSwitcher locales={locales} />
             <Link href={`/${locale}`} className="text-white hover:text-red-500">{t('nav.home')}</Link>
             <Link href={`/${locale}/about`} className="text-white hover:text-red-500">{t('nav.about')}</Link>
-            <a href="https://www.instagram.com/komastil?igsh=djEzeG1tMTgydWNz" target="_blank" rel="noopener noreferrer" className="text-white text-xl hover:text-pink-500"><FaInstagram /></a>
-            <a href="https://www.facebook.com/share/1C29dK8FkM/?mibextid=wwXIf" target="_blank" rel="noopener noreferrer" className="text-white text-xl hover:text-blue-500"><FaFacebookF /></a>
+            <a href="https://www.instagram.com/komastil" target="_blank" rel="noopener noreferrer" className="text-white text-xl hover:text-pink-500"><FaInstagram /></a>
+            <a href="https://www.facebook.com/profile.php?id=61575736070776" target="_blank" rel="noopener noreferrer" className="text-white text-xl hover:text-blue-500"><FaFacebookF /></a>
           </nav>
 
           {/* Бургер кнопка */}

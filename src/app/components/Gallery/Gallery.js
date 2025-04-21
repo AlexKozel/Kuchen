@@ -80,19 +80,22 @@ export default function Gallery() {
   return (
       <section className="py-16 bg-gray-50" id="portfolio">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">{t('title')}</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 text-black">{t('title')}</h2>
 
           <div className="relative">
             {startIndex > 0 && (
                 <button
                     onClick={prevProjectSet}
-                    className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white p-2 rounded-full shadow-md hover:bg-gray-100 transition"
+                    className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white p-2 rounded-full shadow-md hover:bg-gray-100 transition text-black"
                 >
                   &larr;
                 </button>
             )}
 
-            <div ref={galleryRef} className="grid grid-cols-1 md:grid-cols-3 gap-6 transition-transform duration-300">
+            <div
+                ref={galleryRef}
+                className="grid grid-cols-1 md:grid-cols-3 gap-6 transition-transform duration-300"
+            >
               {visibleProjects.map((project) => (
                   <div
                       key={project.id}
@@ -112,7 +115,9 @@ export default function Gallery() {
                     </span>
                       </div>
                     </div>
-                    <h3 className="mt-4 text-lg font-medium">{t(`projects.${project.titleKey}`)}</h3>
+                    <h3 className="mt-4 text-lg font-medium text-black">
+                      {t(`projects.${project.titleKey}`)}
+                    </h3>
                   </div>
               ))}
             </div>
@@ -120,7 +125,7 @@ export default function Gallery() {
             {startIndex + 3 < projects.length && (
                 <button
                     onClick={nextProjectSet}
-                    className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white p-2 rounded-full shadow-md hover:bg-gray-100 transition"
+                    className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white p-2 rounded-full shadow-md hover:bg-gray-100 transition text-black"
                 >
                   &rarr;
                 </button>
