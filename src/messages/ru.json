@@ -54,7 +54,7 @@
     "description": "Производство мебели на заказ с 2010 года",
     "contactsTitle": "Контакты",
     "address": "Platz der Republik 1, 11011 Berlin, Германия",
-    "phone": "+49 (123) 456-78-90",
+    "phone": "++49 (163) 95-30-301",
     "email": "info@example.com",
     "menuTitle": "Меню",
     "home": "Главная",
@@ -97,6 +97,7 @@
     }
   },
   "HeroBanner": {
+    "logoAlt": "Logo",
     "title": "Студия кухонь на заказ",
     "cta": "Бесплатная консультация",
     "closeModal": "Закрыть"

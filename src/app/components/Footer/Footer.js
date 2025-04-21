@@ -16,9 +16,9 @@ export default function Footer() {
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
               <Image
-                  src="/images/komandor.svg"
-                  width={160}
-                  height={50}
+                  src="/images/koma_logo_black.svg"
+                  width={200}
+                  height={75}
                   alt={t('logoAlt')}
                   className="mb-4"
               />

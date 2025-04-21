@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react'
 import { useTranslations } from 'next-intl'
 
-// Список поддерживаемых стран с кодами и флагами
 const COUNTRIES = [
   { code: 'DE', dialCode: '+49', icon: '/icons/flags/de.svg' },
 ]
@@ -98,34 +97,34 @@ export default function FeedbackForm({ onSuccess }) {
   return (
       <section className="py-16 bg-gray-100">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-8">{t('title')}</h2>
+          <h2 className="text-3xl font-bold text-center mb-8 text-black">{t('title')}</h2>
           <form
               onSubmit={handleSubmit}
-              className="bg-white p-8 rounded-lg shadow-md"
+              className="bg-white p-8 rounded-lg shadow-md text-black"
           >
             <div className="grid md:grid-cols-2 gap-6 mb-6">
               <div>
-                <label className="block mb-2">{t('name')}</label>
+                <label className="block mb-2 text-black">{t('name')}</label>
                 <input
                     type="text"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className={`w-full p-3 border rounded ${errors.name ? 'border-red-500' : ''}`}
+                    className={`w-full p-3 border rounded text-black ${errors.name ? 'border-red-500' : ''}`}
                     required
                 />
                 {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
               </div>
               <div>
-                <label className="block mb-2">{t('phone')}</label>
+                <label className="block mb-2 text-black">{t('phone')}</label>
                 <div className="flex">
                   <select
                       value={formData.country}
                       onChange={(e) => setFormData({ ...formData, country: e.target.value })}
-                      className="w-1/3 p-3 border rounded-r-none bg-gray-50"
+                      className="w-1/3 p-3 border rounded-r-none bg-gray-50 text-black"
                   >
                     {COUNTRIES.map(country => (
                         <option key={country.code} value={country.code}>
-                          {country.flag} {country.dialCode}
+                          {country.dialCode}
                         </option>
                     ))}
                   </select>
@@ -133,7 +132,7 @@ export default function FeedbackForm({ onSuccess }) {
                       type="tel"
                       value={phoneValue}
                       onChange={handlePhoneChange}
-                      className={`w-2/3 p-3 border rounded-l-none ${errors.phone ? 'border-red-500' : ''}`}
+                      className={`w-2/3 p-3 border rounded-l-none text-black ${errors.phone ? 'border-red-500' : ''}`}
                       placeholder="176 12345678"
                       required
                   />
@@ -142,22 +141,22 @@ export default function FeedbackForm({ onSuccess }) {
               </div>
             </div>
             <div className="mb-6">
-              <label className="block mb-2">{t('email')}</label>
+              <label className="block mb-2 text-black">{t('email')}</label>
               <input
                   type="email"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className={`w-full p-3 border rounded ${errors.email ? 'border-red-500' : ''}`}
+                  className={`w-full p-3 border rounded text-black ${errors.email ? 'border-red-500' : ''}`}
                   placeholder="example@mail.com"
               />
               {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
             </div>
             <div className="mb-6">
-              <label className="block mb-2">{t('message')}</label>
+              <label className="block mb-2 text-black">{t('message')}</label>
               <textarea
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="w-full p-3 border rounded"
+                  className="w-full p-3 border rounded text-black"
                   rows="4"
               />
             </div>

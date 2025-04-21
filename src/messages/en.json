@@ -54,7 +54,7 @@
     "description": "Custom furniture manufacturing since 2010",
     "contactsTitle": "Contacts",
     "address": "Platz der Republik 1, 11011 Berlin, Germany",
-    "phone": "+49 (123) 456-78-90",
+    "phone": "+49 (163) 95-30-301",
     "email": "info@example.com",
     "menuTitle": "Menu",
     "home": "Home",
@@ -97,6 +97,7 @@
     }
   },
   "HeroBanner": {
+    "logoAlt": "Logo",
     "title": "Custom Kitchen Studio",
     "cta": "Free consultation",
     "closeModal": "Close"

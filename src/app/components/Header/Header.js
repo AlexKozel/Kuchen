@@ -26,7 +26,7 @@ export default function Header({ locales }) {
       <header className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${scrolled ? 'bg-gray-900/95' : 'bg-transparent'}`}>
         <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
           <Link href="/" locale={locale}>
-            <Image src="/images/komandor.svg" width={120} height={40} alt={t('title')} />
+            <Image src="/images/koma_logo_black.svg" width={160} height={60} alt={t('title')} />
           </Link>
 
           {/* Десктоп меню */}
@@ -34,8 +34,8 @@ export default function Header({ locales }) {
             <LocaleSwitcher locales={locales} />
             <Link href={`/${locale}`} className="text-white hover:text-red-500">{t('nav.home')}</Link>
             <Link href={`/${locale}/about`} className="text-white hover:text-red-500">{t('nav.about')}</Link>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-white text-xl hover:text-pink-500"><FaInstagram /></a>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-white text-xl hover:text-blue-500"><FaFacebookF /></a>
+            <a href="https://www.instagram.com/komastil?igsh=djEzeG1tMTgydWNz" target="_blank" rel="noopener noreferrer" className="text-white text-xl hover:text-pink-500"><FaInstagram /></a>
+            <a href="https://www.facebook.com/share/1C29dK8FkM/?mibextid=wwXIf" target="_blank" rel="noopener noreferrer" className="text-white text-xl hover:text-blue-500"><FaFacebookF /></a>
           </nav>
 
           {/* Бургер кнопка */}
