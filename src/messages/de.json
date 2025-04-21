@@ -54,7 +54,7 @@
     "description": "Möbelmanufaktur seit 2010",
     "contactsTitle": "Kontakt",
     "address": "Platz der Republik 1, 11011 Berlin, Deutschland",
-    "phone": "+49 (123) 456-78-90",
+    "phone": "+49 (163) 95-30-301",
     "email": "info@example.com",
     "menuTitle": "Menü",
     "home": "Startseite",
@@ -97,6 +97,7 @@
     }
   },
   "HeroBanner": {
+    "logoAlt": "Logo",
     "title": "Maßgefertigte Küchen",
     "cta": "Kostenlose Beratung",
     "closeModal": "Schließen"
