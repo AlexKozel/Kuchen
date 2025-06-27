@@ -47,11 +47,27 @@ export default function Header({ locales }) {
         {/* Мобильное меню */}
         {menuOpen && (
             <div className="md:hidden bg-gray-900/95 text-white px-4 py-6 space-y-4">
-              <Link href={`/${locale}`} className="block" onClick={toggleMenu}>{t('nav.home')}</Link>
-              <Link href={`/${locale}/about`} className="block" onClick={toggleMenu}>{t('nav.about')}</Link>
+              {/* Переключатель языков */}
+              <div>
+                <LocaleSwitcher locales={locales} />
+              </div>
+
+              {/* Навигация */}
+              <Link href={`/${locale}`} className="block" onClick={toggleMenu}>
+                {t('nav.home')}
+              </Link>
+              <Link href={`/${locale}/about`} className="block" onClick={toggleMenu}>
+                {t('nav.about')}
+              </Link>
+
+              {/* Соцсети */}
               <div className="flex space-x-4 mt-4">
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-xl hover:text-pink-500"><FaInstagram /></a>
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-xl hover:text-blue-500"><FaFacebookF /></a>
+                <a href="https://www.instagram.com/komastil" target="_blank" rel="noopener noreferrer" className="text-xl hover:text-pink-500">
+                  <FaInstagram />
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61575736070776" target="_blank" rel="noopener noreferrer" className="text-xl hover:text-blue-500">
+                  <FaFacebookF />
+                </a>
               </div>
             </div>
         )}
