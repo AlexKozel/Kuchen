@@ -57,6 +57,7 @@ export default function Footer() {
           <div className="border-t border-gray-800 pt-8 text-center text-gray-500">
             <p>{t('rights')}</p>
           </div>
+          <Link href={`/${locale}/datenschutz`} className="text-sm text-gray-500 underline">Datenschutzerklärung</Link>
         </div>
       </footer>
   )

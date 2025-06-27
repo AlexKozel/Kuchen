@@ -36,6 +36,13 @@ export default async function LocaleLayout({ children, params }) {
 
   return (
       <html lang={locale}>
+      <head>
+        {/* ✅ ВСТАВКА COOKIEFIRST СКРИПТА */}
+        <script
+            src="https://consent-eu.cookiefirst.com/sites/komastil.de-74061947-f418-45d8-8754-73db55507ecf/consent.js"
+            defer
+        ></script>
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}> {/* Добавил flex для прижатия футера */}
       {/* Передаем locale и загруженные messages в провайдер */}
       <NextIntlClientProvider locale={locale} messages={messages}>

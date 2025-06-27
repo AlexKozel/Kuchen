@@ -54,7 +54,7 @@
     "description": "KoMaStill 2025",
     "contactsTitle": "Contacts",
     "address": "Platz der Republik 1, 11011 Berlin, Germany",
-    "phone": "+49 (163) 95-30-301",
+    "phone": "+49 (176) 20432013",
     "email": "info@komastil.de",
     "menuTitle": "Menu",
     "home": "Home",
@@ -109,6 +109,51 @@
       "classicKitchen": "Classic Style Kitchen",
       "modernWardrobe": "Modern Wardrobe",
       "scandiLiving": "Scandinavian Living Room"
+    }
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "intro": "The protection of your personal data is very important to us. Below, we inform you about the collection, processing, and use of personal data on our website in accordance with the General Data Protection Regulation (GDPR).",
+    "sections": {
+      "responsible": {
+        "title": "1. Data Controller",
+        "text": "Data Controller in the sense of the GDPR:"
+      },
+      "accessData": {
+        "title": "2. Access Data",
+        "text": "When you visit our website, general information is automatically collected. This information (server log files) includes, for example, the type of web browser, the operating system used, the domain name of your Internet service provider, etc. It is not possible to assign this data to a specific person."
+      },
+      "contactForm": {
+        "title": "3. Collection of Personal Data via the Contact Form",
+        "text": "If you contact us via the contact form, we will store your information (name, email address, phone number, message) to process your request. The processing is carried out on the basis of Art. 6 Para. 1 lit. b GDPR."
+      },
+      "metaPixel": {
+        "title": "4. Use of Meta Pixel (Facebook Pixel)",
+        "text1": "We use the Meta Pixel from Meta Platforms Ireland Ltd. (4 Grand Canal Square, Dublin 2, Ireland) on our website. This allows us to track the behavior of visitors after they have been redirected to our website by clicking on a Facebook advertisement.",
+        "text2": "This serves to optimize our Facebook advertisements and is based on your consent according to Art. 6 Para. 1 lit. a GDPR. The data is usually transferred to Meta servers in the USA.",
+        "text3": "You can revoke your consent at any time via the cookie banner."
+      },
+      "cookies": {
+        "title": "5. Use of Cookies",
+        "text1": "This website uses cookies to provide certain functions and to analyze user behavior. When you first visit, you will be asked if you agree to the use of certain cookies. Your selection will be saved.",
+        "text2": "You can change or revoke your consent at any time in the cookie banner."
+      },
+      "legalBasis": {
+        "title": "6. Legal Basis for Processing",
+        "text": "If we process your data based on your consent (e.g., for marketing cookies), this is done in accordance with Art. 6 Para. 1 lit. a GDPR. If we process your data for the fulfillment of a contract or pre-contractual measures, Art. 6 Para. 1 lit. b GDPR is the legal basis."
+      },
+      "yourRights": {
+        "title": "7. Your Rights",
+        "text": "You have the right to information, rectification, erasure, restriction of processing, data portability, and objection to the processing of your data. Please contact us using the contact details provided above."
+      },
+      "dataRetention": {
+        "title": "8. Duration of Storage",
+        "text": "We store personal data only as long as necessary to process your request or to comply with legal retention obligations."
+      },
+      "changes": {
+        "title": "9. Changes to this Privacy Policy",
+        "text": "We reserve the right to adapt this Privacy Policy as needed, for example, in the event of legal changes or the expansion of our services."
+      }
     }
   },
   "validationError": "error"

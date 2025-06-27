@@ -54,7 +54,7 @@
     "description": "KoMaStill 2025",
     "contactsTitle": "Kontakt",
     "address": "Platz der Republik 1, 11011 Berlin, Deutschland",
-    "phone": "+49 (163) 95-30-301",
+    "phone": "+49 (176) 20432013",
     "email": "info@komastil.de",
     "menuTitle": "Menü",
     "home": "Startseite",
@@ -109,6 +109,51 @@
       "classicKitchen": "Küche im klassischen Stil",
       "modernWardrobe": "Moderner Kleiderschrank",
       "scandiLiving": "Wohnzimmer im skandinavischen Stil"
+    }
+  },
+  "privacyPolicy": {
+    "title": "Datenschutzerklärung",
+    "intro": "Der Schutz Ihrer persönlichen Daten ist uns sehr wichtig. Nachfolgend informieren wir Sie über die Erhebung, Verarbeitung und Nutzung personenbezogener Daten auf unserer Website gemäß der Datenschutz-Grundverordnung (DSGVO).",
+    "sections": {
+      "responsible": {
+        "title": "1. Verantwortlicher",
+        "text": "Verantwortlich im Sinne der DSGVO:"
+      },
+      "accessData": {
+        "title": "2. Zugriffsdaten",
+        "text": "Beim Besuch unserer Website werden automatisch Informationen allgemeiner Natur erfasst. Diese Informationen (Server-Logfiles) beinhalten etwa die Art des Webbrowsers, das verwendete Betriebssystem, den Domainnamen Ihres Internet-Service-Providers usw. Eine Zuordnung dieser Daten zu einer bestimmten Person ist nicht möglich."
+      },
+      "contactForm": {
+        "title": "3. Erhebung personenbezogener Daten über das Kontaktformular",
+        "text": "Wenn Sie über das Kontaktformular mit uns in Verbindung treten, speichern wir Ihre Angaben (Name, E-Mail-Adresse, Telefonnummer, Nachricht), um Ihre Anfrage zu bearbeiten. Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO."
+      },
+      "metaPixel": {
+        "title": "4. Einsatz von Meta Pixel (Facebook Pixel)",
+        "text1": "Wir verwenden auf unserer Website den Meta Pixel von Meta Platforms Ireland Ltd. (4 Grand Canal Square, Dublin 2, Irland). Damit können wir das Verhalten von Besuchern nachverfolgen, nachdem diese durch Klick auf eine Facebook-Werbeanzeige auf unsere Website weitergeleitet wurden.",
+        "text2": "Dies dient der Optimierung unserer Facebook-Werbeanzeigen und erfolgt auf Grundlage Ihrer Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO. Die Daten werden in der Regel an Server von Meta in den USA übertragen.",
+        "text3": "Sie können Ihre Einwilligung jederzeit über den Cookie-Banner widerrufen."
+      },
+      "cookies": {
+        "title": "5. Verwendung von Cookies",
+        "text1": "Diese Website verwendet Cookies, um bestimmte Funktionen bereitzustellen und um das Nutzerverhalten zu analysieren. Beim ersten Besuch werden Sie gefragt, ob Sie der Nutzung bestimmter Cookies zustimmen möchten. Ihre Auswahl wird gespeichert.",
+        "text2": "Sie können Ihre Zustimmung jederzeit im Cookie-Banner ändern oder widerrufen."
+      },
+      "legalBasis": {
+        "title": "6. Rechtsgrundlagen der Verarbeitung",
+        "text": "Sofern wir Ihre Daten auf Basis Ihrer Einwilligung verarbeiten (z. B. für Marketing-Cookies), erfolgt dies gem. Art. 6 Abs. 1 lit. a DSGVO. Verarbeiten wir Ihre Daten zur Erfüllung eines Vertrags oder vorvertraglicher Maßnahmen, ist Art. 6 Abs. 1 lit. b DSGVO die Rechtsgrundlage."
+      },
+      "yourRights": {
+        "title": "7. Ihre Rechte",
+        "text": "Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch gegen die Verarbeitung Ihrer Daten. Kontaktieren Sie uns hierzu bitte unter den oben angegebenen Kontaktdaten."
+      },
+      "dataRetention": {
+        "title": "8. Dauer der Speicherung",
+        "text": "Wir speichern personenbezogene Daten nur so lange, wie dies zur Bearbeitung Ihrer Anfrage oder zur Einhaltung gesetzlicher Aufbewahrungspflichten erforderlich ist."
+      },
+      "changes": {
+        "title": "9. Änderungen dieser Datenschutzerklärung",
+        "text": "Wir behalten uns das Recht vor, diese Datenschutzerklärung bei Bedarf anzupassen, z. B. bei rechtlichen Änderungen oder bei Erweiterung unserer Services."
+      }
     }
   },
   "validationError": "error"
