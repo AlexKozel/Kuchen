@@ -58,6 +58,8 @@ export default function Footer() {
             <p>{t('rights')}</p>
           </div>
           <Link href={`/${locale}/datenschutz`} className="text-sm text-gray-500 underline">Datenschutzerklärung</Link>
+          <div className="flex space-x-4 mt-4"></div>
+          <Link href={`/${locale}/impressum`} className="text-sm text-gray-500 underline">Impressum</Link>
         </div>
       </footer>
   )

@@ -30,6 +30,18 @@
       "subtitle": "We use components from the best European brands"
     }
   },
+  "impressum": {
+    "hero": {
+      "alt": "Legal Notice",
+      "title": "Legal Disclosure"
+    },
+    "content": {
+      "title": "What sets us apart",
+      "point1": "Komastil UG\nAuthorized Representative(s)\nNikolai Malinowski\nKomastil UG (limited liability)\nKnesebeckstr 6\n12205 Berlin\ninfo@komastil.de\n01639530301",
+      "point2": "HRB 277005\nBerlin Charlottenburg",
+      "point3": "VAT ID:\nPending"
+    }
+  },
   "feedback": {
     "title": "Leave a Request",
     "name": "Your Name*",

@@ -30,6 +30,18 @@
       "subtitle": "Wir verwenden Komponenten der besten europäischen Marken"
     }
   },
+  "impressum": {
+    "hero": {
+      "alt": "Impressum",
+      "title": "Impressumspflicht"
+    },
+    "content": {
+      "title": "Was uns auszeichnet",
+      "point1": "Komastil Ug\nVertretungsberechtigte Person(en)\nNikolai Malinowski\nKomastil UG Haftungsbeschränkt\nKnesebeckstr 6\n12205 Berlin\ninfo@komastil.de\n01639530301",
+      "point2": "HRB 277005\nBerlin Charlottenburg",
+      "point3": "Umsatzsteuer-ID:\nIst Beantragt"
+    }
+  },
   "feedback": {
     "title": "Anfrage senden",
     "name": "Ihr Name*",

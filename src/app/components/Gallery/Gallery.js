@@ -28,6 +28,15 @@ export default function Gallery() {
     },
     {
       id: 3,
+      titleKey: 'modernKitchen',
+      images: [
+        '/images/projects/k10.jpg',
+        '/images/projects/k11.jpg',
+        '/images/projects/k12.jpg',
+      ],
+    },
+    {
+      id: 4,
       titleKey: 'scandiLiving',
       images: ['/images/projects/kit-3-1.jpg', '/images/projects/kit-3-2.jpg'],
     },
