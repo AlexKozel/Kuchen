@@ -65,13 +65,13 @@
     "logoAlt": "Logo",
     "description": "KoMaStill 2025",
     "contactsTitle": "Kontakt",
-    "address": "Platz der Republik 1, 11011 Berlin, Deutschland",
-    "phone": "+49 (176) 20432013",
+    "address": "Knesebeckstraße 6 12205  Berlin",
+    "phone": "+49 (163) 9530301",
     "email": "info@komastil.de",
     "menuTitle": "Menü",
     "home": "Startseite",
     "portfolio": "Portfolio",
-    "rights": "© 2023 Möbelstudio. Alle Rechte vorbehalten."
+    "rights": "© 2025 Möbelstudio. Alle Rechte vorbehalten."
   },
   "workWithUs": {
     "howWeWorkTitle": "So arbeiten wir",
@@ -85,9 +85,11 @@
     "step3Title": "3. Freigabe und Abstimmung",
     "step3Description": "Sie erhalten ein realistisches Projekt mit finalem Angebot. Keine versteckten Kosten – alles transparent.",
     "step3Alt": "Abstimmung",
-    "step4Title": "4. Fertigung und Montage",
-    "step4Description": "Nach Freigabe geht der Auftrag in die Fertigung. Die Montage erfolgt durch zertifizierte Monteure – sauber, ordentlich, nach Norm.",
-    "step4Alt": "Montage"
+    "step4Title": "4. Zeitplanabwicklung / Finanzierung",
+    "step4Description": "In Absprache mit Ihnen organisieren wir die Montage und koordinieren Ihren Umbau ohne Zeitverlust. Genauso professionell stellen wir mit Ihnen auf Wunsch einen Finanzierungsplan zusammen.",
+    "step4Alt": "Finanzierung",
+    "step5Title": "5. Fertigung und Montage",
+    "step5Description": "Nach Freigabe geht der Auftrag in die Fertigung. Die Montage erfolgt durch zertifizierte Monteure – sauber, ordentlich, nach Norm."
   },
   "Testimonials": {
     "title": "Kundenbewertungen",

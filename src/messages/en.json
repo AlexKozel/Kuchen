@@ -65,13 +65,13 @@
     "logoAlt": "Logo",
     "description": "KoMaStill 2025",
     "contactsTitle": "Contacts",
-    "address": "Platz der Republik 1, 11011 Berlin, Germany",
-    "phone": "+49 (176) 20432013",
+    "address": "Knesebeckstraße 6 12205  Berlin",
+    "phone": "+49 (163) 9530301",
     "email": "info@komastil.de",
     "menuTitle": "Menu",
     "home": "Home",
     "portfolio": "Portfolio",
-    "rights": "© 2023 Furniture studio. All rights reserved."
+    "rights": "© 2025 Furniture studio. All rights reserved."
   },
   "workWithUs": {
     "howWeWorkTitle": "How We Work",
@@ -85,9 +85,12 @@
     "step3Title": "3. Approval and Coordination",
     "step3Description": "You receive a realistic project and the final estimate. No hidden additional charges — everything is transparent.",
     "step3Alt": "Approval",
-    "step4Title": "4. Production and Installation",
-    "step4Description": "After approval, the order goes into production. Installation is carried out by certified installers — clean, neat, and according to standards.",
-    "step4Alt": "Installation"
+    "step4Title": "4. Schedule execution / financing",
+    "step4Description": "In consultation with you, we will organize the assembly and coordinate your renovation without any time loss. Just as professionally, we will create a financing plan with you if desired.",
+    "step4Alt": "financing",
+    "step5Title": "5. Production and Installation",
+    "step5Description": "After approval, the order goes into production. Installation is carried out by certified installers — clean, neat, and according to standards.",
+    "step5Alt": "Installation"
   },
   "Testimonials": {
     "title": "Customer reviews",

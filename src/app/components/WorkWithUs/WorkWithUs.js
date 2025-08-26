@@ -58,7 +58,7 @@ export default function WorkWithUs() {
             {/* Шаг 4 */}
             <div className="flex gap-6 items-start bg-white p-6 rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition">
               <div className="min-w-[60px]">
-                <Image src="/icons/workWithUs/install.svg" width={60} height={60} alt={t('step4Alt')} />
+                <Image src="/icons/workWithUs/money.svg" width={60} height={60} alt={t('step4Alt')} />
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">{t('step4Title')}</h3>
@@ -67,6 +67,20 @@ export default function WorkWithUs() {
                 </p>
               </div>
             </div>
+
+            {/* Шаг 5 */}
+            <div className="flex gap-6 items-start bg-white p-6 rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition">
+              <div className="min-w-[60px]">
+                <Image src="/icons/workWithUs/install.svg" width={60} height={60} alt={t('step5Alt')} />
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">{t('step5Title')}</h3>
+                <p className="text-gray-700 leading-relaxed">
+                  {t('step5Description')}
+                </p>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
