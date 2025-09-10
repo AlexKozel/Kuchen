@@ -12,6 +12,8 @@ import { Geist, Geist_Mono } from "next/font/google"; // Убедись что �
 import "../globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import Script from 'next/script';
+
 
 const geistSans = Geist({ subsets: ['latin'], variable: '--font-geist-sans' }); // Пример настройки для v14/v15
 const geistMono = Geist_Mono({ subsets: ['latin'], variable: '--font-geist-mono' });
@@ -37,11 +39,42 @@ export default async function LocaleLayout({ children, params }) {
   return (
       <html lang={locale}>
       <head>
+        {/* Яндекс Метрика */}
+        <Script
+            id="yandex-metrika"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
+              (function(m,e,t,r,i,k,a){
+                m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+                m[i].l=1*new Date();
+                for (var j = 0; j < document.scripts.length; j++) {
+                  if (document.scripts[j].src === r) { return; }
+                }
+                k=e.createElement(t),a=e.getElementsByTagName(t)[0];
+                k.async=1;
+                k.src=r;
+                a.parentNode.insertBefore(k,a);
+              })(window, document,'script','https://mc.yandex.ru/metrika/tag.js','ym');
+
+              ym(103158566, 'init', {
+                webvisor:true,
+                trackHash:true,
+                clickmap:true,
+                accurateTrackBounce:true,
+                trackLinks:true
+              });
+            `,
+            }}
+        />
+        {/* /Yandex.Metrika counter */}
+
         {/* ✅ ВСТАВКА COOKIEFIRST СКРИПТА */}
         <script
             src="https://consent-eu.cookiefirst.com/sites/komastil.de-74061947-f418-45d8-8754-73db55507ecf/consent.js"
             defer
         ></script>
+        <title></title>
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}> {/* Добавил flex для прижатия футера */}
       {/* Передаем locale и загруженные messages в провайдер */}
