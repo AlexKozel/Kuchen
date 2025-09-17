@@ -39,7 +39,7 @@
       "title": "Что нас отличает",
       "point1": "Komastil UG\nУполномоченное лицо(а)\nНиколай Малиновский\nKomastil UG с ограниченной ответственностью\nKnesebeckstr 6\n12205 Berlin\ninfo@komastil.de\n01639530301",
       "point2": "HRB 277005\nБерлин, Charlottenburg",
-      "point3": "Номер НДС:\nВ обработке (запрошен)"
+      "point3": "Номер НДС:\nDE456442595"
     }
   },
   "feedback": {
@@ -121,9 +121,10 @@
     "title": "Наши работы",
     "photoCount": "{count} фото",
     "projects": {
-      "classicKitchen": "Кухня в классическом стиле",
-      "modernWardrobe": "Современный гардероб",
-      "scandiLiving": "Гостиная в скандинавском стиле"
+      "modernKitchen": "Современная кухня в темном цвете",
+      "whiteKitchen": "Классическая кузня в сочитании с деревом",
+      "blueKitchen": "Прямая кухня с камнем",
+      "blackAndWhite": "Большая кухня для просторных помещений"
     }
   },
   "privacyPolicy": {

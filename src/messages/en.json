@@ -39,7 +39,7 @@
       "title": "What sets us apart",
       "point1": "Komastil UG\nAuthorized Representative(s)\nNikolai Malinowski\nKomastil UG (limited liability)\nKnesebeckstr 6\n12205 Berlin\ninfo@komastil.de\n01639530301",
       "point2": "HRB 277005\nBerlin Charlottenburg",
-      "point3": "VAT ID:\nPending"
+      "point3": "VAT ID:\nDE456442595"
     }
   },
   "feedback": {
@@ -121,9 +121,10 @@
     "title": "Our Work",
     "photoCount": "{count} photos",
     "projects": {
-      "classicKitchen": "Classic Style Kitchen",
-      "modernWardrobe": "Modern Wardrobe",
-      "scandiLiving": "Scandinavian Living Room"
+      "modernKitchen": "Modern kitchen in dark color",
+      "whiteKitchen": "Classic kitchen combined with wood",
+      "blueKitchen": "Linear kitchen with stone",
+      "blackAndWhite": "Large kitchen for spacious rooms"
     }
   },
   "privacyPolicy": {

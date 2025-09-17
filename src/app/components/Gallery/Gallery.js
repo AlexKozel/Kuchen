@@ -13,12 +13,12 @@ export default function Gallery() {
   const projects = [
     {
       id: 1,
-      titleKey: 'classicKitchen',
+      titleKey: 'modernKitchen',
       images: ['/images/projects/kit-1-1.jpg', '/images/projects/kit-1-2.jpg'],
     },
     {
       id: 2,
-      titleKey: 'modernWardrobe',
+      titleKey: 'whiteKitchen',
       images: [
         '/images/projects/kit-2-1.jpg',
         '/images/projects/kit-2-2.jpg',
@@ -28,7 +28,7 @@ export default function Gallery() {
     },
     {
       id: 3,
-      titleKey: 'modernKitchen',
+      titleKey: 'blueKitchen',
       images: [
         '/images/projects/k10.jpg',
         '/images/projects/k11.jpg',
@@ -37,7 +37,7 @@ export default function Gallery() {
     },
     {
       id: 4,
-      titleKey: 'scandiLiving',
+      titleKey: 'blackAndWhite',
       images: ['/images/projects/kit-3-1.jpg', '/images/projects/kit-3-2.jpg'],
     },
   ];
