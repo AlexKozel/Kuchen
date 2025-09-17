@@ -59,6 +59,9 @@ export default function Header({ locales }) {
               <Link href={`/${locale}/about`} className="block" onClick={toggleMenu}>
                 {t('nav.about')}
               </Link>
+              <Link href={`/${locale}/impressum`} className="block" onClick={toggleMenu}>
+                {t('nav.impressum')}
+              </Link>
 
               {/* Соцсети */}
               <div className="flex space-x-4 mt-4">
